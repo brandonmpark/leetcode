@@ -22,19 +22,19 @@
 
 ## Stack
 
-- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/):
-- [Min Stack](https://leetcode.com/problems/min-stack/):
-- [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/):
-- [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/):
-- [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/):
-- [Car Fleet](https://leetcode.com/problems/car-fleet/):
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/): use a stack
+- [Min Stack](https://leetcode.com/problems/min-stack/): save tuples containing the value and min at insertion time in the stack
+- [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/): use a stack and evaluate directly
+- [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/): backtrack by adding openers and closers if can be added
+- [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/): keep monotonic decreasing stack
+- [Car Fleet](https://leetcode.com/problems/car-fleet/): create monotonic stack by decreasing position
 - [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/):
 
 ## Binary Search
 
-- [Binary Search](https://leetcode.com/problems/binary-search/):
-- [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/):
-- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/):
+- [Binary Search](https://leetcode.com/problems/binary-search/): binary search
+- [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/): convert to 1-D
+- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/): binary search for k
 - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/):
 - [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/):
 - [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/):
@@ -42,8 +42,8 @@
 
 ## Sliding Window
 
-- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/):
-- [Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/):
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/): keep left at the minimum so far and track max difference
+- [Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/): track window's character counts
 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/):
 - [Permutation in String](https://leetcode.com/problems/permutation-in-string/):
 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/):
@@ -51,45 +51,45 @@
 
 ## Linked List
 
-- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/):
-- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/):
-- [Reorder List](https://leetcode.com/problems/reorder-list/):
-- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/):
-- [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/):
-- [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/):
-- [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/):
-- [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/):
-- [LRU Cache](https://leetcode.com/problems/lru-cache/):
-- [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/):
-- [Reverse Nodes in K Group](https://leetcode.com/problems/reverse-nodes-in-k-group/):
+- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/): recursively modify pointers
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/): recursively set smaller's pointer to larger
+- [Reorder List](https://leetcode.com/problems/reorder-list/): find middle, reverse second half, then merge
+- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/): use second pointer n nodes ahead
+- [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/): one pass to create the list, one pass to set pointers. use hashmap
+- [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/): track carry
+- [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/): slow/fast pointer
+- [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/): slow/fast pointer
+- [LRU Cache](https://leetcode.com/problems/lru-cache/): use a hashmap and doubly linkedlist from least recently to most recently used
+- [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/): use heap to track next node each time
+- [Reverse Nodes in K Group](https://leetcode.com/problems/reverse-nodes-in-k-group/): use helper function to reverse then do each group
 
 ## Trees
 
-- [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/):
-- [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/):
+- [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/): recursively switch left and right child
+- [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/): recursively find max depth of each child
 - [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/):
-- [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/):
-- [Same Tree](https://leetcode.com/problems/same-tree/):
-- [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/):
-- [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/):
-- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/):
-- [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/):
-- [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/):
-- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/):
-- [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/):
+- [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/): create a recursive height function that checks the two children's height then returns its own
+- [Same Tree](https://leetcode.com/problems/same-tree/): recursively check each child
+- [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/): serialize to strings
+- [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/): recursively check each case based on the values then go into the correct subtree
+- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/): dfs by level
+- [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/): modified level order traversal
+- [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/): recursively check if value is less than max and call on children with new max
+- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/): track desired min and max values then recursively check children
+- [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/): stack traverse
 - [Contruct Binary Tree From Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/):
 - [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/):
 - [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/):
 
 ## Tries
 
-- [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/):
-- [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/):
-- [Word Search II](https://leetcode.com/problems/word-search-ii/):
+- [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/): nested hashmaps
+- [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/): use a trie with marked word ends
+- [Word Search II](https://leetcode.com/problems/word-search-ii/): use a trie then backtrack starting at each position, marking obtained words by removing their end marker
 
 ## Backtracking
 
-- [Subsets](https://leetcode.com/problems/subsets/):
+- [Subsets](https://leetcode.com/problems/subsets/): iterative
 - [Combination Sum](https://leetcode.com/problems/combination-sum/):
 - [Permumations](https://leetcode.com/problems/permutations/):
 - [Subsets II](https://leetcode.com/problems/subsets-ii/):
